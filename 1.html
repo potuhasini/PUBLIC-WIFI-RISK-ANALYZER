@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>WiFi Risk Analyzer</title>
+</head>
+<body style="text-align:center;font-family:Arial">
+
+<h3>🔐 Public Wi-Fi Risk Analyzer</h3>
+<p>Network: Free_Cafe_WiFi</p>
+
+<button onclick="check()">Check Safety</button>
+<p id="r"></p>
+
+<script>
+function check(){
+ let encrypted=false;
+ document.getElementById("r").innerHTML =
+ encrypted ? "🟢 Safe Network" :
+ "🔴 Unsafe Wi-Fi! Avoid banking & logins";
+}
+</script>
+
+</body>
+</html>
